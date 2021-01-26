@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
+  color: #484f5b;
+}
+
+a {
+  color: #484f5b;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .container {
@@ -31,12 +43,59 @@ body {
   padding-right: 75px;
 }
 
-.header .overlay {
+.header .hero {
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-image: url("../images/header/header-bg.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
   min-height: 30vh;
   margin-top: -24px;
+}
+
+.header .hero .row .hero-image {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .hero .row .hero-heading {
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header .hero .row .hero-heading h1 {
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.header .hero .row .hero-heading p {
+  font-size: 24px;
+}
+
+.header .hero .row .hero-heading a {
+  font-size: 24px;
+  background-color: #e6c8c3;
+  font-weight: 700;
+  padding: 10px 35px;
 }
 /*# sourceMappingURL=style.css.map */
